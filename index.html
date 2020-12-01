@@ -1,22 +1,389 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>MyPage</title>
-    <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/bg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./system/lodash.min.js"></script>
+    <script type="text/javascript" src="./system/jquery.min.js"></script>
+    <script type="text/javascript" src="./system/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="./system/scripts/bubbles.js"></script>
+
+    <script type="text/javascript" src="./system/scripts/threecanvas.js"></script>
+    <script type="text/javascript" src="./system/scripts/snow.js"></script>
+    <script type="text/javascript" src="./system/scripts/winter.js"></script>
+
+    <link rel="stylesheet" href="./system/css/normalize.css">
+    <link rel="stylesheet" href="./system/css/style.css">
+    <link rel="stylesheet" href="./system/css/responsive.css">
 </head>
 
 <body>
-    <div class="index-bg">
-        <div class="index-content">
-            <h1>Hello Word！！！</h1>
+    <div class="home">
+        <div id="intro" class="section inview" style="position: relative;">
+            <div id="video-container">
+                <video id="video" muted="" autobuffer="" autoplay="" loop="" volume="0">
+                    <source src="images/werbeagentur-ingolstadt/werbeagentur-ingolstadt.mp4"
+                        type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                    <source src="images/werbeagentur-ingolstadt/werbeagentur-ingolstadt.webm"
+                        type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+                    <source src="images/werbeagentur-ingolstadt/werbeagentur-ingolstadt.ogv"
+                        type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+                </video>
+            </div>
+            <div class="downlink" style="display: block;"><a href="#werbung" class="nav-item"
+                    title="Homepage mit CMS, Joomla, Wordpress, Typo3 und HTML5 und E-Commerce mit Magento"><img
+                        src="images/ingolstadt-webdesign.png"
+                        alt="Ingolstadt Werbeagentur Responsive Webdesign mit CMS Joomla, Typo3 und Wordpress"
+                        title="Beckett Werbeagentur in Ingolstadt" width="50" height="50"></a></div>
         </div>
-        <canvas></canvas>
+        <div id="werbung" class="section inview">
+            <div id="heaven">
+            </div>
+
+            <div id="hell">
+            </div>
+            <div id="glass1"></div>
+            <div id="glass2"></div>
+            <div id="heaven-bg"></div>
+            <div id="hell-bg"></div>
+            <div id="agentur-head"></div>
+            <div class="downlink" style="display: block;"><a href="#agentur" class="nav-item"
+                    title="Visitenkarte, Logo, Briefbogen und Geschäftsausstattung bei der Beckett Werbeagentur in Bayern"><img
+                        src="images/ingolstadt-werbeagentur.png"
+                        alt="Marketing und PR Agentur in Ingolstadt für Werbung und Printanzeigen, Webdesign und Apps"
+                        title="Beckett Werbeagentur in Ingolstadt" width="50" height="50"></a></div>
+        </div>
+        <div id="agentur" class="section inview">
+            <div class="anibox"><img src="images/agentur/werbeagentur-ingolstadt.png"
+                    alt="Ihre Werbeagentur für Bayerisch online und Bairisch Webdesign Lösungen aus Ingolstadt"
+                    title="Frankenbot - I love Ingolstadt" class="device" width="525" height="250">
+                <div id="xray">
+                    <div id="organs">
+                        <div id="organs-overlay"></div>
+                        <div id="brain">
+                            <div id="cog1" class="cog animate"><img src="images/agentur/webdesign-ingolstadt.gif"
+                                    alt="Flyer, Anzeige und Erscheinungsbild Erstellung bei München in Ingolstadt auf Bayerisch"
+                                    title="Homepage Erstellung, SEO Suchmaschinenoptimierung, PR Design und Webdesign in Ingolstadt"
+                                    width="115" height="115"></div>
+                            <div id="cog2" class="cog animate"><img src="images/agentur/werbeagentur-ingolstadt.gif"
+                                    alt="Websites mit Joomla, Magento, Typo3 und Wordpress für Responsive Webdesign"
+                                    title="Content Management System mit Website mit CMS, Joomla, Wordpress und Typo3 in Ingolstadt"
+                                    width="113" height="113"></div>
+                            <div id="cog3" class="cog animate"><img src="images/agentur/printwerbung-ingolstadt.gif"
+                                    alt="Responsive Webdesign in Ingolstadt für Ihre Website und Homepage bei Neuburg"
+                                    title="Ingolstadt Werbeagentur für Werbung und Design auf Bairisch und kreative Marketing Ideen"
+                                    width="108" height="108"></div>
+                        </div>
+                        <div id="heart" class="animate"><img src="images/agentur/webdesign-ingolstadt.png"
+                                alt="Webdesign und Marketing Werbung auf Bayerisch, Logo Design, Geschäftsausstattung und CI"
+                                title="Homepage Erstellung, SEO Suchmaschinenoptimierung, PR Design und Webdesign in Ingolstadt">
+                        </div>
+                        <ul id="clock">
+                            <li class="seconds" style="transform: translateZ(-0.01px) scale(1) rotate(162deg);"></li>
+                            <li class="hours" style="transform: translateZ(-0.01px) scale(1) rotate(450deg);"></li>
+                            <li class="minutes" style="transform: translateZ(-0.01px) scale(1) rotate(6deg);"></li>
+                        </ul>
+                        <div id="butterfly">
+                            <div id="butterfly-body"></div>
+                            <div id="butterfly-leftwing" class="butterfly-wing animate"><img
+                                    src="images/agentur/responsive-webdesign.png"
+                                    alt="CMS Webdesign mit Joomla, Wordpress, Typo3 und HTML5 auf Bayerisch mit Webhosting"
+                                    title="Ingolstadt Werbeagentur für Werbung und Design auf Bairisch und kreative Marketing Ideen">
+                            </div>
+                            <div id="butterfly-rightwing" class="butterfly-wing animate"><img
+                                    src="images/agentur/webdesign-agentur.png"
+                                    alt="Content Management System mit Website mit CMS, Joomla, Wordpress und Typo3 in Ingolstadt"
+                                    title="Webdesign und Bildbearbeitung aus Ingolstadt, Bayern bei der Beckett Werbeagentur">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="holder">
+                <div id="agentur-links">
+                    <!-- <h4>Erfahren Sie mehr...</h4> -->
+                    <ul>
+                        <li id="agentur-1" class="agenturlink herz"><img src="content/de/logo-design-ingolstadt.gif"
+                                alt="Werbeagentur für Webdesign und Printwerbung sowie Druck und Grafikdesign in Ingolstadt"
+                                title="Beckett Werbeagentur - Werbung mit Herz aus Ingolstadt" width="150" height="200">
+                        </li>
+                        <li id="agentur-2" class="agenturlink hirn"><img src="content/de/print-werbung-ingolstadt.gif"
+                                alt="Werbung und Webdesign Agentur in Ingolstadt und Eichstätt für Website und Homepage"
+                                title="Beckett Werbeagentur - Den Kopf voller Ideen" width="150" height="200"></li>
+                        <li id="agentur-3" class="agenturlink bauch"><img
+                                src="content/de/responsive-webdesign-ingolstadt.gif"
+                                alt="Print und Grafikdesign Werbeagentur in Ingolstadt und München in Bayern"
+                                title="Beckett Werbeagentur - Ein Gespür für gutes Design" width="150" height="200">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="downlink" style="display: block;"><a href="#testimonials" class="nav-item"
+                    title="Responsive Webdesign und mobile Website aus Ingolstadt für Smartphone und Tablet"><img
+                        src="images/ingolstadt-werbeagentur.png"
+                        alt="Bayerische Übersetzung und Webdesign in Ingolstadt bei Eichstätt und Regensburg"
+                        title="Beckett Werbeagentur in Ingolstadt" width="50" height="50"></a></div>
+        </div>
+        <div id="testimonials" class="section inview" style="height: 626px;">
+            <div id="danke-head"></div>
+            <div id="danke-foot"></div>
+            <div id="thanks"><img src="content/de/werbeagentur-ingolstadt.png"
+                    alt="Werbung und Webdesign Agentur in Ingolstadt bei Eichstätt für Website und Homepage"
+                    title="Ingolstadt Werbeagentur für Responsive Webdesign, Homepage-Gestaltung und Printwerbung"
+                    width="180" height="130"></div>
+            <div id="coffee">
+                <div id="ripple-overlay"></div>
+                <div id="ripple" class="jquery-ripples" style="background-image: none;"><canvas width="235" height="230"
+                        style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: -1;"></canvas>
+                </div>
+            </div>
+            <div id="planets-wrapper">
+                <div id="planets">
+                    <div id="sun" class="planet animate"><img class="pball animate"
+                            src="images/testimonials/corporate-design.png"
+                            alt="Branding, Corporate Identity und Logo-Design bei der Beckett Werbeagentur in Ingolstadt"
+                            title="Webdesign, Smartphone App und Homepage bei der Beckett Werbeagentur in Ingolstadt"
+                            width="120" height="120"></div>
+                    <div class="mercury planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Online Shop mit Magento, OS und XT Commerce, modified Shop und CMS mit Joomla"
+                            title="Webdesign mit Joomla, Magento, Wordpress, Typo3, Drupal, XT und HTML5 und SEO"
+                            width="95" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Website-Gestaltung und Suchmaschinenoptimierung für Ihre Homepage in Ingolstadt"
+                            title="Ihre Ingolstadt Werbeagentur für Webdesign, Printwerbung, PR Design, Logo-Design und Druck"
+                            width="46" height="46"></div>
+                    <div class="venus planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Flyer, Anzeige und Erscheinungsbild Erstellung bei München in Ingolstadt auf Bayerisch"
+                            title="Werbeagentur für Webdesign und Printwerbung, Druck und Grafikdesign in Ingolstadt"
+                            width="120" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Ihre E-Commerce Werbeagentur für den Magento und OS Commerce Online-Shop aus Ingolstadt"
+                            title="Logo-Design, Corporate Identity und Rebranding bei der Beckett Werbeagentur in Ingolstadt"
+                            width="60" height="60"></div>
+                    <div class="earth planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Webdesign mit Joomla, Magento, Wordpress, Typo3, Drupal, XT und HTML5 und SEO"
+                            title="Ihre Werbeagentur in Ingolstadt für Webdesign, Print-Werbung und Logo-Design"
+                            width="135" height="10"><img class="pball animate"
+                            src="images/testimonials/werbeagentur-ingolstadt.png"
+                            alt="Tablet Webdesign, App und Homepage-Gestaltung in Ingolstadt bei Landshut und Dachau, München"
+                            title="Print-Werbung, Anzeigen, Flyer und Homepagegestaltung Agentur in Ingolstadt bei Regensburg"
+                            width="60" height="60"></div>
+                    <div class="mars planet animate"><img class="pbar" src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Responsive Webdesign in Ingolstadt für Ihre Website und Homepage bei Neuburg"
+                            title="Responsive Webdesign in Ingolstadt bei der Beckett Werbeagentur für Printwerbung "
+                            width="165" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Ihre Ingolstadt Werbeagentur für Homepage-Gestaltung, Mobile Apps und Online-Applikationen"
+                            title="Rebranding, Corporate Design und Geschäftsausstattung bei der Beckett Werbeagentur in Ingolstadt"
+                            width="50" height="50"></div>
+                    <div class="jupiter planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Websites mit Joomla, Magento, Typo3 und Wordpress für Responsive Webdesign"
+                            title="Website mit CMS, Joomla, Wordpress, Typo3 und HTML5 aus Bayern mit Webhosting"
+                            width="180" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Ihre bayerische Werbeagentur zwischen Nürnberg und München für Webdesign und Print"
+                            title="Agentur für App-Entwicklung, Website-Gestaltung und SEO für Ihre Homepage aus Ingolstadt"
+                            width="90" height="90"></div>
+                    <div class="saturn planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Logo, Briefbogen und Geschäftsausstattung bei der Beckett Werbeagentur bei Neuburg"
+                            title="Printwerbung und Grafikdesign Werbeagentur in Ingolstadt bei Eichstätt und München in Bayern"
+                            width="225" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Logo, Briefbogen und Visitenkarte bei der Beckett Werbeagentur in Ingolstadt, Bayern"
+                            title="Werbung in Ingolstadt bei Eichstätt und Neuburg für Smartphone Webdesign und Printmedien"
+                            width="80" height="80"><img class="saturn-rings"
+                            src="images/testimonials/werbeagentur-saturn.png"
+                            alt="Responsive Webdesign in Ingolstadt bei der Beckett Werbeagentur für Print-Werbung"
+                            title="Druck und Printwerbung in Ingolstadt bei der Beckett Werbeagentur in Oberbayern"
+                            width="130" height="130"></div>
+                    <div class="uranus planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Ihre Werbeagentur in Ingolstadt bei Eichstätt und Neuburg für Responsive Webdesign"
+                            title="Suchmaschinenoptimierung, Website, PR Design, Homepage und Grafikdesign in Bayern"
+                            width="260" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Webdesign und Printwerbung Agentur in Ingolstadt bei Nürnberg und München in Bayern"
+                            title="Ihre Werbeagentur in Ingolstadt bei Eichstätt und Neuburg für Logo-Gestaltung und Webdesign"
+                            width="60" height="60"></div>
+                    <div class="neptune planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Homepage Erstellung, SEO, Responsive Webdesign und E-Commerce in Ingolstadt"
+                            title="Homepages und Grafikdesign aus Ingolstadt, Bayern bei der Beckett Werbeagentur"
+                            width="275" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Corporate Design mit Briefbogen, Logo, Printanzeigen und Webdesign aus Ingolstadt-Zuchering"
+                            title="Webdesign und Corporate Identity mit Briefbogen, Logo und Anzeige in Ingolstadt"
+                            width="70" height="70"></div>
+                    <div class="pluto planet animate"><img class="pbar"
+                            src="images/testimonials/werbeagentur-design.jpg"
+                            alt="Werbeagentur für Geschäftsausstattung, Anzeige und Printwerbung in Zuchering, Ingolstadt"
+                            title="Responsive Webdesign in Ingolstadt für eine mobile Website mit Webhosting auf Bayerisch"
+                            width="310" height="10"><img class="pball animate"
+                            src="images/testimonials/responsive-webdesign.png"
+                            alt="Werbeagentur für Printwerbung, PR Design und Rebranding mit Logodesign in Ingolstadt"
+                            title="Logo, Flyer, Visitenkarte, Website und Homepage Webdesign in Ingolstadt bei Neuburg"
+                            width="50" height="50"></div>
+                </div>
+                <div id="planets-shadow">
+                    <div class="mercury planet-shadow animate"></div>
+                    <div class="venus planet-shadow animate"></div>
+                    <div class="earth planet-shadow animate"></div>
+                    <div class="mars planet-shadow animate"></div>
+                    <div class="jupiter planet-shadow animate"></div>
+                    <div class="saturn planet-shadow animate"></div>
+                    <div class="uranus planet-shadow animate"></div>
+                    <div class="neptune planet-shadow animate"></div>
+                    <div class="pluto planet-shadow animate"></div>
+                </div>
+            </div>
+            <div class="holder">
+                <div class="content">
+                    <div class="testimonial" style="display: block;">
+                        <!-- <p class="testimonial-logo"><img
+                                alt="Werbeagentur für Printanzeigen, Flyer, Logo-Design und Webdesign aus Ingolstadt"
+                                title="Beckett Werbeagentur sagt danke" width="200" height="60"
+                                ng-src="images/testimonials/danke/global-spot-muenchen.svg"
+                                src="images/testimonials/danke/global-spot-muenchen.svg"></p> -->
+                        <div class="quote">
+                            <p class="quote-start"><img src="images/testimonials/design-open.png"
+                                    alt="Werbeagentur für Geschäftsausstattung, Anzeige und Printwerbung in Zuchering, Ingolstadt"
+                                    title="Agentur für Printwerbung, Rebranding und Corporate Identity in Ingolstadt bei Eichstätt"
+                                    width="68" height="60"></p>
+                            <p class="quote-text ng-binding" ng-bind-html="testimonial.text">
+                                受到法律适当放松的方式的看
+                            </p>
+                            <p class="quote-end"><img src="images/testimonials/design-close.png"
+                                    alt="Homepage mit CMS, Joomla, Wordpress, Typo3 und HTML5 und E-Commerce mit Magento"
+                                    title="Websites, Grafikdesign, Responsive Webdesign und Werbung bei Eichstätt in Bayern"
+                                    width="68" height="60"></p>
+                        </div>
+                        <!-- <p class="testimonial-name ng-binding">Kai Ostermann</p> -->
+                        <!-- <p class="testimonial-firma ng-binding">Geschäftsführer, Global Spot GmbH, München</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="testimonials-nav">
+                <p id="testimonials-last"><img class="testimonials-link" src="images/testimonials/design-last.png"
+                        ng-click="prev()" alt="Beckett Webdesign in Ingolstadt"
+                        title="Beckett Werbeagentur in Ingolstadt" width="50" height="30"></p>
+                <p id="testimonials-next"><img class="testimonials-link" src="images/testimonials/design-next.png"
+                        ng-click="next();" alt="Beckett Werbeagentur in Ingolstadt"
+                        title="Beckett Webdesign in Ingolstadt" width="50" height="30"></p>
+            </div> -->
+            <div id="kontakt-head"></div>
+        </div>
     </div>
 </body>
-<script src="js/bg.js"></script>
+<script>
+    $(function ($) {
+
+        // snowfall();
+
+        var aniPrevTop = -400,
+            orgPrevTop = -400;
+
+        $(document).on('scroll', function (e) {
+            // console.log(1)
+            var cH = document.body.clientHeight,
+                sTop = $(document).scrollTop(),
+                werbungOT = $('#werbung').offset().top;
+
+
+            // 
+            $('#werbung').height(cH + 30);
+            $('#hell').height(cH / 2 + 30);
+            if (sTop - cH < werbungOT) {
+                $('#glass1').css({
+                    'background-position': '0%' + ' ' + ((sTop - cH) / cH * 500) + 'px'
+                });
+            }
+
+
+
+            // 
+
+            var agenturST = $('#agentur').offset().top;
+
+            // console.log(agenturST, sTop, cH);
+
+            var aniPrevTop = parseFloat($('.anibox').css('top')),
+                orgPrevTop = parseFloat($('#organs').css('top'));
+
+            // console.log(sTop - agenturST)
+            // console.log(sTop + cH - agenturST)
+
+            // var antop;
+
+            if (sTop > agenturST - cH && sTop < agenturST + 1000) {
+                $('.anibox').show();
+                setTimeout(function () {
+                    $('#organs').show();
+                }, 500);
+
+
+                var antop = sTop + cH - agenturST - 230;
+
+                // 1000 1200  antop 1626
+                // console.log(antop);
+                if (antop > 300) {
+                    $('.anibox').stop().animate({ 'top': (sTop - agenturST) * 1000 / 1626 + 300 + 'px' }, 500, 'swing')
+                    $('#organs').stop().animate({ 'top': -((sTop - agenturST) * 1000 / 1626 + 300) + 'px' }, 500, 'swing')
+                } else {
+                    $('.anibox').stop().animate({ 'top': antop + 'px' }, 500, 'swing');
+                    $('#organs').stop().animate({ 'top': -antop + 'px' }, 500, 'swing');
+                }
+            } else {
+                $('.anibox').hide();
+                setTimeout(function () {
+                    $('#organs').hide();
+                }, 500);
+            }
+        })
+
+
+        // var enter = false;
+        $('#agentur-links li').on('mouseenter', function (e) {
+            // console.log(e.target)
+            var top;
+            var targetID = $(e.target).parent('li').attr('id');
+            // console.log(targetID);
+            if (targetID == 'agentur-1') {
+                top = '420px';
+                $('.anibox').stop();
+                $('#organs').stop();
+            } else if (targetID == 'agentur-2') {
+                top = '180px';
+                $('.anibox').stop();
+                $('#organs').stop();
+            } else if (targetID == 'agentur-3') {
+                top = '550px';
+                $('.anibox').stop();
+                $('#organs').stop();
+            }
+            // $('.anibox').css({ 'display': 'block' });
+            // $('#organs').css({ 'display': 'block' });
+            $('.anibox').animate({ 'top': top }, 500, 'swing');
+            $('#organs').animate({ 'top': '-' + top }, 500, 'swing');
+        })
+
+        $('.downlink').click(function (e) {
+            // console.log(e.target);
+            e.preventDefault();
+            var mid = $(e.target).parents('.downlink').find('a').attr('href');
+            // console.log(mid);
+            var scrollTo = $(mid).offset().top;
+            // console.log(scrollTo);
+            $('html').animate({ scrollTop: scrollTo + 'px' }, 1000 ,'swing');
+        })
+    })
+</script>
 
 </html>
