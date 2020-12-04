@@ -31,7 +31,7 @@
                 </div>
                 <div id="sprachen" style="display: block;">
                     <ul class="menu">
-                        <li class="nav1"><a href="" class="active">html</a>
+                        <li class="nav1"><a href="" class="active">主页</a>
                         </li>
                         <li class="nav2"><a href="">css</a>
                         </li>
@@ -500,6 +500,12 @@
             if (mid) {
                 htmlScorll(mid);
             }
+        })
+
+        $('#sprachen .menu a').click(function (e) {
+            e.preventDefault();
+            $(this).parent('li').siblings('li').find('a').removeClass('active');
+            $(this).addClass('active');
         })
 
         function htmlScorll(id) {
