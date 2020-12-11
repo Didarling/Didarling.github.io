@@ -33,9 +33,9 @@
                     <ul class="menu">
                         <li class="nav1"><a href="" class="active">主页</a>
                         </li>
-                        <li class="nav2"><a href="">css</a>
+                        <li class="nav2"><a href="">自我介绍</a>
                         </li>
-                        <li class="nav3"><a href="">js</a>
+                        <li class="nav3"><a href="">摆设</a>
                         </li>
                     </ul>
                 </div>
@@ -119,8 +119,8 @@
             <div id="nav-real">
                 <ul>
                     <li id="ni1"><a href="#werbung" class="nav-item" title="Html学习笔记">Html</a></li>
-                    <li id="ni2"><a href="" class="nav-item" title="CSS学习笔记">CSS</a></li>
-                    <li id="ni3"><a href="#agentur" class="nav-item" title="Javascript学习笔记">JS</a>
+                    <li id="ni2"><a href="./javascript/nav.html" class="nav-item" title="CSS学习笔记">CSS</a></li>
+                    <li id="ni3"><a href="#werbung" class="nav-item" title="Javascript学习笔记">JS</a>
                     </li>
                     <li id="ni4"><a href="" class="nav-item" title="三大框架以及其他类库的学习使用">框架</a>
                     </li>
@@ -151,7 +151,8 @@
                             I/O（输入/输出）相关的 API，都要靠宿主环境（host）提供，所以 JavaScript 只合适嵌入更大型的应用程序环境，去调用宿主环境提供的底层 API。
                         </p>
                         <div class="werbung-link">
-                            <p><a href="javascript:(0);" class="nav-item" title="Js发展历史和基本语法">Js发展历史和基本语法 »</a></p>
+                            <p><a href="./javascript/nav.html" class="nav-item" title="Js发展历史和基本语法">Js发展历史和基本语法 »</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                             2015年6月，ECMAScript 6正式发布，并且更名为“ECMAScript 2015”。
                         </p>
                         <div class="werbung-link">
-                            <p><a href="javascript:(0);" class="nav-item" title="Js核心知识">js核心知识点
+                            <p><a href="./javascript/nav.html" class="nav-item" title="Js核心知识">js核心知识点
                                     »</a></p>
                         </div>
                     </div>
@@ -547,6 +548,10 @@
         })
 
         function htmlScorll(id) {
+            if (id && id.indexOf('#') === -1) {
+                location.href = id;
+                return;
+            }
             if (id == '#') {
                 $('html').animate({ scrollTop: '0px' }, 1000, 'swing');
             } else {
