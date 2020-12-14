@@ -42,9 +42,9 @@ body {
     display: flex;
 }
 
-.content p {
+/* .content p {
     color: white;
-}
+} */
 
 .nav-list {
     flex: 1;
@@ -53,7 +53,7 @@ body {
 }
 
 .nav-item {
-    height: 250px;
+    /* height: 250px; */
     padding: 20px 36px 20px 0;
     border-right: 4px solid #3f2f4d;
     position: relative;
@@ -124,10 +124,10 @@ body {
 
 .icontent {
     padding: 10px 20px 10px;
-    height: 130px;
+    /* height: 130px; */
     line-height: 28px;
     font-size: 14px;
-    color: #eeeeee;
+    color: #d6cfcf;
     overflow: hidden;
     transition: all .5s linear;
 }
@@ -145,7 +145,7 @@ body {
 
 .icontent:hover,
 .ibot:hover {
-    color: #fff;
+    /* color: #fff; */
     padding-left: 40px;
 }
 
@@ -164,6 +164,12 @@ body {
     /* height: 100%; */
     padding: 10px;
     position: relative;
+}
+
+.p1 {}
+
+.p2 {
+    text-indent: 20px;
 }
 
 /* 鼠标滑过效果 */
@@ -418,7 +424,7 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-.offbtn{
+.offbtn {
     position: fixed;
     top: 20px;
     right: 30px;

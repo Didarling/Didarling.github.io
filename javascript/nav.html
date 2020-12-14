@@ -28,7 +28,7 @@
                 </div>
                 <div class="content">
                     <div class="nav-list">
-                        <div class="nav-item">
+                        <div class="nav-item" onclick="goPage('fzls.html')">
                             <div class="nitem-box">
                                 <h2 class="ihead">
                                     <!-- JavaScript发展历史 -->
@@ -179,10 +179,15 @@
         var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
         content.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
     });
-    
+
     $('.offbtn').on('click', function () {
         off = !off;
-    })
+    });
+
+    function goPage(url) {
+        // console.log(url);
+        location.href = url;
+    }
 </script>
 
 </html>
