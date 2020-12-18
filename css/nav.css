@@ -129,7 +129,7 @@ body {
     font-size: 14px;
     color: #d6cfcf;
     overflow: hidden;
-    transition: all .5s linear;
+    transition: padding-left .5s linear;
 }
 
 .ibot {
@@ -170,6 +170,21 @@ body {
 
 .p2 {
     text-indent: 20px;
+}
+
+.p1 span,
+.p2 span {
+    color: #ff8100;
+}
+
+.h3 {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.code {
+    margin: 0 -40px;
 }
 
 /* 鼠标滑过效果 */
